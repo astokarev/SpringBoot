@@ -35,7 +35,7 @@ public class User {
         this.email = email;
     }
 
-    public Long getId() {
+    public <T> Long getId() {
         return id;
     }
 
@@ -43,7 +43,7 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
+    public <T> String getName() {
         return name;
     }
 
@@ -51,7 +51,7 @@ public class User {
         this.name = name;
     }
 
-    public String getSecond_name() {
+    public <T> String getSecond_name() {
         return second_name;
     }
 
@@ -59,7 +59,7 @@ public class User {
         this.second_name = second_name;
     }
 
-    public int getAge() {
+    public <T> int getAge() {
         return age;
     }
 
@@ -67,7 +67,7 @@ public class User {
         this.age = age;
     }
 
-    public String getEmail() {
+    public <T> String getEmail() {
         return email;
     }
 
