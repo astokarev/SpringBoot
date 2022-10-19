@@ -24,6 +24,7 @@ public class UserDaoImpl implements UserDao {
         entityManager.persist(user);
     }
 
+    //этот метод возвращает дженерик
     @Override
     public List<User> listUsers() {
         TypedQuery<User> query = entityManager.createQuery("FROM User", User.class);
