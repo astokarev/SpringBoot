@@ -18,7 +18,6 @@ private final UserService userService;
 
     @GetMapping("/")
     public String home() {
-
         return "redirect:users";
     }
 
@@ -32,7 +31,6 @@ private final UserService userService;
 
     @GetMapping("/add")
     public String addUser(Model model) {
-
         User user = new User();
         model.addAttribute("user", user);
         return "add";
@@ -54,7 +52,6 @@ private final UserService userService;
 
     @PatchMapping("/{id}")
     public String edit(@ModelAttribute("editable_user") User user, @PathVariable("id") Long id) {
-
         userService.editUser(id, user);
         return "redirect:users";
     }
